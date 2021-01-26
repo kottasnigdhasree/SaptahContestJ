@@ -1,0 +1,23 @@
+#ksnigdhas02@gmail.com
+#Kotta_Snigdhasree
+#challenge2
+a = int(input("Ente the number of test cases:"))
+while 1 <= a :
+     b = str(input("Enter the three numbers with space in between: "))
+     c = b.index(' ')
+     num1 = int( b[: c] , base = 10)
+     d = b[c+1 : len(b)]
+     e = d.index(' ')
+     num2 = int(d[0 : e], base = 10)
+     num3 = int(d[e+1 : len(d)], base = 10)
+     list1 = [ num1, num2, num3]
+     list1.sort() 
+     if list1[0] == list1[1] and list1[1] == list1[2] :
+        print("All three numbers are equal")
+     elif list1[0] != list1[1] and list1[1] != list1[2] :
+        print(list1[1])
+     elif list1[0] == list1[1] : 
+        print(list1[2])
+     elif list1[1] == list1[2] and list1[0]< list[1] :
+        print(list1[1])
+     a-=1
